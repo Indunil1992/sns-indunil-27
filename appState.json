@@ -11,7 +11,7 @@
         "isRemovable": true,
         "filePath": "lambda-indu.js",
         "cursor": {
-          "lineNumber": 1,
+          "lineNumber": 19,
           "column": 1
         },
         "config": {
@@ -38,14 +38,15 @@
     ],
     "currentFileId": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
     "resources": {
-      "snsDirectSMSResource": {
-        "name": "snsDirectSMSResource",
+      "snsusEast1appMPNSsnsAppTestCafe": {
+        "name": "snsusEast1appMPNSsnsAppTestCafe",
         "type": "SNS",
         "config": {
-          "snsType": 1,
-          "numbers": [
-            "+94713245242"
-          ]
+          "appArn": "arn:aws:sns:us-east-1:318300609668:app/MPNS/snsAppTestCafe",
+          "appName": "snsAppTestCafe",
+          "appType": "MPNS",
+          "appRegion": "us-east-1",
+          "snsType": 2
         }
       }
     },
@@ -83,7 +84,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582797430172
+    "lastSave": 1582798155892
   },
   "VCS_STATE": {
     "provider": "GitHub",
