@@ -3,20 +3,20 @@ const sns = new AWS.SNS();
 
 exports.handler = async (event) => {
     try {
-        let data = await sns.createPlatformEndpoint({
-            PlatformApplicationArn: "arn:aws:sns:us-east-1:318300609668:app/MPNS/snsAppTestCafe",
-            Token: "123123",
-            Attributes: {}
+        let data = await sns.publish({
+            Message: "hi",
+            PhoneNumber: "+94713245242",
+            MessageAttributes: {
+                'AWS.SNS.SMS.SMSType': {
+                    DataType: "String",
+                    StringValue: "Promotional"
+                }
+            }
         }).promise();
-        console.log("data");
-                console.log(data);
+
     } catch (err) {
         // error handling goes here
-                console.log("err");
-                console.log(err);
-
     };
-
 
     return { "message": "Successfully executed: sns" };
 };
