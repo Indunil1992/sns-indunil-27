@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "lambda-indu.js",
         "cursor": {
-          "lineNumber": 21,
-          "column": 53
+          "lineNumber": 1,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -85,7 +85,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582790261767
+    "lastSave": 1582790423704
   },
   "VCS_STATE": {
     "provider": "GitHub",
