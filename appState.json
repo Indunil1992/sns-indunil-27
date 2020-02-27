@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "lambda-indu.js",
         "cursor": {
-          "lineNumber": 1,
-          "column": 1
+          "lineNumber": 11,
+          "column": 35
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -27,7 +27,7 @@
             "id": "fad1c7b1-d0a7-4d0d-bc71-a589af2dce11",
             "name": "Test event",
             "functionId": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
-            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
             "eventTemplate": "hello-world"
           }
         }
@@ -38,14 +38,15 @@
     ],
     "currentFileId": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
     "resources": {
-      "snsDirectSMSResource": {
-        "name": "snsDirectSMSResource",
+      "snsusEast1appMPNSsnsAppTestCafe": {
+        "name": "snsusEast1appMPNSsnsAppTestCafe",
         "type": "SNS",
         "config": {
-          "snsType": 1,
-          "numbers": [
-            "+94713245242"
-          ]
+          "appArn": "arn:aws:sns:us-east-1:318300609668:app/MPNS/snsAppTestCafe",
+          "appName": "snsAppTestCafe",
+          "appType": "MPNS",
+          "appRegion": "us-east-1",
+          "snsType": 2
         }
       }
     },
@@ -83,7 +84,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582794915856
+    "lastSave": 1582796104796
   },
   "VCS_STATE": {
     "provider": "GitHub",
