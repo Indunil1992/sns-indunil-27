@@ -11,7 +11,7 @@
         "isRemovable": true,
         "filePath": "lambda-indu.js",
         "cursor": {
-          "lineNumber": 17,
+          "lineNumber": 15,
           "column": 1
         },
         "config": {
@@ -47,19 +47,6 @@
           "topicArn": "arn:aws:sns:us-east-1:318300609668:TestSNS",
           "topicRegion": "us-east-1",
           "snsType": 0,
-          "subscriptions": []
-        }
-      },
-      "snsusEast1newTest": {
-        "name": "snsusEast1newTest",
-        "type": "SNS",
-        "config": {
-          "topicMode": 0,
-          "topicName": "new-test",
-          "topicArn": "arn:aws:sns:us-east-1:318300609668:new-test",
-          "topicRegion": "us-east-1",
-          "snsType": 0,
-          "topicDisplayName": "27-test",
           "subscriptions": []
         }
       }
@@ -98,7 +85,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582792540295
+    "lastSave": 1582794165153
   },
   "VCS_STATE": {
     "provider": "GitHub",
