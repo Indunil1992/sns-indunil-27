@@ -5,8 +5,8 @@ exports.handler = async (event) => {
     try {
         let data = await sns.subscribe({
             TopicArn: "arn:aws:sns:us-east-1:318300609668:TestSNS",
-            Protocol: "sqs",
-            Endpoint: "arn:aws:sqs:us-east-1:318300609668:indunil-message-queue"
+            Protocol: "sms",
+            Endpoint: "94713245242"
         }).promise();
 
     } catch (err) {
