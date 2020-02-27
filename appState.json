@@ -4,14 +4,14 @@
       "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e": {
         "id": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
         "parent": null,
-        "name": "lambda.js",
+        "name": "lambda-indu.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "lambda.js",
+        "filePath": "lambda-indu.js",
         "cursor": {
-          "lineNumber": 20,
+          "lineNumber": 1,
           "column": 1
         },
         "config": {
@@ -85,7 +85,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582789668144
+    "lastSave": 1582789851533
   },
   "VCS_STATE": {
     "provider": "GitHub",
