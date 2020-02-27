@@ -1,0 +1,94 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e": {
+        "id": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
+        "parent": null,
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "lambda.js",
+        "cursor": {
+          "lineNumber": 2,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "snsusEast1TestSNS",
+            "config": {}
+          }
+        ],
+        "testCases": {
+          "fad1c7b1-d0a7-4d0d-bc71-a589af2dce11": {
+            "id": "fad1c7b1-d0a7-4d0d-bc71-a589af2dce11",
+            "name": "Test event",
+            "functionId": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e"
+    ],
+    "currentFileId": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
+    "resources": {
+      "snsusEast1TestSNS": {
+        "name": "snsusEast1TestSNS",
+        "type": "SNS",
+        "config": {
+          "topicMode": 1,
+          "topicName": "TestSNS",
+          "topicArn": "arn:aws:sns:us-east-1:318300609668:TestSNS",
+          "topicRegion": "us-east-1",
+          "snsType": 0,
+          "subscriptions": []
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "sns-indunil-27",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1582789423728
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sns-indunil-27",
+      "url": "https://github.com/Indunil1992/sns-indunil-27"
+    }
+  }
+}
