@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "lambda.js",
         "cursor": {
-          "lineNumber": 2,
-          "column": 5
+          "lineNumber": 20,
+          "column": 1
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -21,12 +21,7 @@
           "memory": 128,
           "layers": []
         },
-        "triggers": [
-          {
-            "resourceName": "snsusEast1TestSNS",
-            "config": {}
-          }
-        ],
+        "triggers": [],
         "testCases": {
           "fad1c7b1-d0a7-4d0d-bc71-a589af2dce11": {
             "id": "fad1c7b1-d0a7-4d0d-bc71-a589af2dce11",
@@ -71,7 +66,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -82,7 +85,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582789423728
+    "lastSave": 1582789668144
   },
   "VCS_STATE": {
     "provider": "GitHub",
