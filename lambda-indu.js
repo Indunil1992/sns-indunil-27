@@ -3,9 +3,22 @@ const sns = new AWS.SNS();
 
 exports.handler = async (event) => {
     try {
-        let data = await sns.unsubscribe({
-            SubscriptionArn: "arn:aws:sns:us-east-1:318300609668:TestSNS:5aac42c6-3953-48ac-977e-d7d3ed5504be"
+        let data = await sns.publish({
+            Message: "hi test 2/27/2020",
+            PhoneNumber: "+94713245242",
+            MessageAttributes: {
+                'AWS.SNS.SMS.SMSType': {
+                    DataType: "String",
+                    StringValue: "Promotional"
+                },
+                'AWS.SNS.SMS.SenderID': {
+                    DataType: "String",
+                    StringValue: "1234"
+                }
+            }
         }).promise();
+
+
         console.log("data");
                 console.log(data);
     } catch (err) {
@@ -15,5 +28,5 @@ exports.handler = async (event) => {
 
     };
 
-    return { "message": "Successfully executed: test" };
+    return { "message": "Successfully executed: sns" };
 };

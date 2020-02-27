@@ -11,7 +11,7 @@
         "isRemovable": true,
         "filePath": "lambda-indu.js",
         "cursor": {
-          "lineNumber": 15,
+          "lineNumber": 28,
           "column": 1
         },
         "config": {
@@ -38,16 +38,14 @@
     ],
     "currentFileId": "92cab2b5-5a9d-40cf-ac08-ee2ac3e5541e",
     "resources": {
-      "snsusEast1TestSNS": {
-        "name": "snsusEast1TestSNS",
+      "snsDirectSMSResource": {
+        "name": "snsDirectSMSResource",
         "type": "SNS",
         "config": {
-          "topicMode": 1,
-          "topicName": "TestSNS",
-          "topicArn": "arn:aws:sns:us-east-1:318300609668:TestSNS",
-          "topicRegion": "us-east-1",
-          "snsType": 0,
-          "subscriptions": []
+          "snsType": 1,
+          "numbers": [
+            "+94713245242"
+          ]
         }
       }
     },
@@ -85,7 +83,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1582794165153
+    "lastSave": 1582794626170
   },
   "VCS_STATE": {
     "provider": "GitHub",
