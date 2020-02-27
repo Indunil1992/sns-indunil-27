@@ -9,22 +9,18 @@ exports.handler = async (event) => {
             MessageAttributes: {
                 'AWS.SNS.SMS.SMSType': {
                     DataType: "String",
-                    StringValue: "Promotional"
-                },
-                'AWS.SNS.SMS.SenderID': {
-                    DataType: "String",
-                    StringValue: "1234"
+                    StringValue: "Transactional"
                 }
             }
         }).promise();
 
 
         console.log("data");
-                console.log(data);
+        console.log(data);
     } catch (err) {
         // error handling goes here
-                console.log("err");
-                console.log(err);
+        console.log("err");
+        console.log(err);
 
     };
 
